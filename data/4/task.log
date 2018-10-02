@@ -1,0 +1,135 @@
+[2018-09-26 06:55:45,807] ERROR task_4: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/dynamo/AiTouch/cvat/cvat/data/4/data/0/0/0.jpg" does not exist
+[2018-09-26 07:00:35,888] INFO task_4: get task request
+[2018-09-26 07:00:35,929] ERROR task_4: cannot get task
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 152, in get_task
+    response = task.get(tid)
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/task.py", line 169, in get
+    segment_length = max(db_segments[0].stop_frame - db_segments[0].start_frame + 1, 1)
+IndexError: list index out of range
+[2018-09-26 07:13:06,966] ERROR task_4: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/dynamo/AiTouch/cvat/cvat/data/4/data/0/0/0.jpg" does not exist
+[2018-09-26 08:51:06,960] ERROR task_4: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/dynamo/AiTouch/cvat/cvat/data/4/data/0/0/0.jpg" does not exist
+[2018-09-26 08:52:16,709] ERROR task_4: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/dynamo/AiTouch/cvat/cvat/data/4/data/0/0/0.jpg" does not exist
+[2018-09-26 09:03:23,567] ERROR task_4: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/dynamo/AiTouch/cvat/cvat/data/4/data/0/0/0.jpg" does not exist
+[2018-09-26 09:04:28,264] ERROR task_4: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/dynamo/AiTouch/cvat/cvat/data/4/data/0/0/0.jpg" does not exist
+[2018-09-26 09:05:08,838] ERROR task_4: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/dynamo/AiTouch/cvat/cvat/data/4/data/0/0/0.jpg" does not exist
+[2018-09-26 09:05:23,928] ERROR task_4: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/dynamo/AiTouch/cvat/cvat/data/4/data/0/0/0.jpg" does not exist
+[2018-09-26 09:07:24,281] INFO task_4: get task request
+[2018-09-26 09:07:24,333] ERROR task_4: cannot get task
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 152, in get_task
+    response = task.get(tid)
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/task.py", line 169, in get
+    segment_length = max(db_segments[0].stop_frame - db_segments[0].start_frame + 1, 1)
+IndexError: list index out of range
+[2018-09-26 11:47:09,622] ERROR task_4: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/dynamo/AiTouch/cvat/cvat/data/4/data/0/0/0.jpg" does not exist
+[2018-09-26 12:01:18,828] ERROR task_4: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/dynamo/AiTouch/cvat/cvat/data/4/data/0/0/0.jpg" does not exist
+[2018-10-01 05:35:44,002] ERROR task_4: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/dynamo/AiTouch/cvat/cvat/data/4/data/0/0/0.jpg" does not exist
+[2018-10-01 05:48:14,863] ERROR task_4: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/dynamo/AiTouch/cvat/cvat/data/4/data/0/0/0.jpg" does not exist
+[2018-10-01 06:50:13,655] ERROR task_4: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/dynamo/AiTouch/cvat/cvat/data/4/data/0/0/0.jpg" does not exist
+[2018-10-02 19:04:48,708] ERROR task_4: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/dynamo/AiTouch/cvat/cvat/data/4/data/0/0/0.jpg" does not exist
+[2018-10-02 19:07:21,487] ERROR task_4: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/dynamo/AiTouch/cvat/cvat/data/4/data/0/0/0.jpg" does not exist
+[2018-10-02 19:28:06,024] ERROR task_4: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/dynamo/AiTouch/cvat/cvat/data/4/data/0/0/0.jpg" does not exist
+[2018-10-02 19:28:07,344] ERROR task_4: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 59, in sendfile
+    raise Http404('"%s" does not exist' % filename)
+django.http.response.Http404: "/home/dynamo/AiTouch/cvat/cvat/data/4/data/0/0/0.jpg" does not exist

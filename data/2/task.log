@@ -1,0 +1,212 @@
+[2018-09-25 09:16:12,856] ERROR task_2: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 114, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 55, in sendfile
+    _sendfile = _get_sendfile()
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 13, in _decorated
+    _cached.append(fn())
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 33, in _get_sendfile
+    raise ImproperlyConfigured('You must specify a value for SENDFILE_BACKEND')
+django.core.exceptions.ImproperlyConfigured: You must specify a value for SENDFILE_BACKEND
+[2018-09-25 09:16:42,657] INFO task_2: dump annotation request
+[2018-09-25 09:16:45,670] INFO task_2: check annotation
+[2018-09-25 09:16:48,669] INFO task_2: check annotation
+[2018-09-25 09:16:51,669] INFO task_2: check annotation
+[2018-09-25 09:16:54,265] ERROR task_2: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 114, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 55, in sendfile
+    _sendfile = _get_sendfile()
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 13, in _decorated
+    _cached.append(fn())
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 33, in _get_sendfile
+    raise ImproperlyConfigured('You must specify a value for SENDFILE_BACKEND')
+django.core.exceptions.ImproperlyConfigured: You must specify a value for SENDFILE_BACKEND
+[2018-09-25 09:54:17,665] ERROR task_2: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 114, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 55, in sendfile
+    _sendfile = _get_sendfile()
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 13, in _decorated
+    _cached.append(fn())
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 33, in _get_sendfile
+    raise ImproperlyConfigured('You must specify a value for SENDFILE_BACKEND')
+django.core.exceptions.ImproperlyConfigured: You must specify a value for SENDFILE_BACKEND
+[2018-09-25 09:55:24,753] ERROR task_2: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 114, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 55, in sendfile
+    _sendfile = _get_sendfile()
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 13, in _decorated
+    _cached.append(fn())
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 33, in _get_sendfile
+    raise ImproperlyConfigured('You must specify a value for SENDFILE_BACKEND')
+django.core.exceptions.ImproperlyConfigured: You must specify a value for SENDFILE_BACKEND
+[2018-09-25 09:57:32,740] ERROR task_2: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 55, in sendfile
+    _sendfile = _get_sendfile()
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 13, in _decorated
+    _cached.append(fn())
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 33, in _get_sendfile
+    raise ImproperlyConfigured('You must specify a value for SENDFILE_BACKEND')
+django.core.exceptions.ImproperlyConfigured: You must specify a value for SENDFILE_BACKEND
+[2018-09-25 10:22:32,164] INFO task_2: get task request
+[2018-09-25 10:22:32,174] ERROR task_2: cannot get task
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 152, in get_task
+    response = task.get(tid)
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/task.py", line 169, in get
+    segment_length = max(db_segments[0].stop_frame - db_segments[0].start_frame + 1, 1)
+IndexError: list index out of range
+[2018-09-25 10:23:09,205] ERROR task_2: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 55, in sendfile
+    _sendfile = _get_sendfile()
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 13, in _decorated
+    _cached.append(fn())
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 33, in _get_sendfile
+    raise ImproperlyConfigured('You must specify a value for SENDFILE_BACKEND')
+django.core.exceptions.ImproperlyConfigured: You must specify a value for SENDFILE_BACKEND
+[2018-09-25 10:23:17,407] ERROR task_2: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 55, in sendfile
+    _sendfile = _get_sendfile()
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 13, in _decorated
+    _cached.append(fn())
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 33, in _get_sendfile
+    raise ImproperlyConfigured('You must specify a value for SENDFILE_BACKEND')
+django.core.exceptions.ImproperlyConfigured: You must specify a value for SENDFILE_BACKEND
+[2018-09-25 10:23:17,944] ERROR task_2: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 55, in sendfile
+    _sendfile = _get_sendfile()
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 13, in _decorated
+    _cached.append(fn())
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 33, in _get_sendfile
+    raise ImproperlyConfigured('You must specify a value for SENDFILE_BACKEND')
+django.core.exceptions.ImproperlyConfigured: You must specify a value for SENDFILE_BACKEND
+[2018-09-25 10:23:18,151] ERROR task_2: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 55, in sendfile
+    _sendfile = _get_sendfile()
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 13, in _decorated
+    _cached.append(fn())
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 33, in _get_sendfile
+    raise ImproperlyConfigured('You must specify a value for SENDFILE_BACKEND')
+django.core.exceptions.ImproperlyConfigured: You must specify a value for SENDFILE_BACKEND
+[2018-09-25 10:23:18,360] ERROR task_2: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 55, in sendfile
+    _sendfile = _get_sendfile()
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 13, in _decorated
+    _cached.append(fn())
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 33, in _get_sendfile
+    raise ImproperlyConfigured('You must specify a value for SENDFILE_BACKEND')
+django.core.exceptions.ImproperlyConfigured: You must specify a value for SENDFILE_BACKEND
+[2018-09-25 10:23:35,887] ERROR task_2: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 55, in sendfile
+    _sendfile = _get_sendfile()
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 13, in _decorated
+    _cached.append(fn())
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 33, in _get_sendfile
+    raise ImproperlyConfigured('You must specify a value for SENDFILE_BACKEND')
+django.core.exceptions.ImproperlyConfigured: You must specify a value for SENDFILE_BACKEND
+[2018-09-25 10:31:34,433] ERROR task_2: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 55, in sendfile
+    _sendfile = _get_sendfile()
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 13, in _decorated
+    _cached.append(fn())
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 33, in _get_sendfile
+    raise ImproperlyConfigured('You must specify a value for SENDFILE_BACKEND')
+django.core.exceptions.ImproperlyConfigured: You must specify a value for SENDFILE_BACKEND
+[2018-09-25 10:31:35,310] ERROR task_2: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 55, in sendfile
+    _sendfile = _get_sendfile()
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 13, in _decorated
+    _cached.append(fn())
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 33, in _get_sendfile
+    raise ImproperlyConfigured('You must specify a value for SENDFILE_BACKEND')
+django.core.exceptions.ImproperlyConfigured: You must specify a value for SENDFILE_BACKEND
+[2018-09-25 10:31:37,358] ERROR task_2: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 55, in sendfile
+    _sendfile = _get_sendfile()
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 13, in _decorated
+    _cached.append(fn())
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 33, in _get_sendfile
+    raise ImproperlyConfigured('You must specify a value for SENDFILE_BACKEND')
+django.core.exceptions.ImproperlyConfigured: You must specify a value for SENDFILE_BACKEND
+[2018-09-25 10:51:28,635] ERROR task_2: cannot get frame #0
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 115, in get_frame
+    return sendfile(request, path)
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 55, in sendfile
+    _sendfile = _get_sendfile()
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 13, in _decorated
+    _cached.append(fn())
+  File "/home/dynamo/AiTouch/cvat/cvat-venv/lib/python3.6/site-packages/sendfile/__init__.py", line 33, in _get_sendfile
+    raise ImproperlyConfigured('You must specify a value for SENDFILE_BACKEND')
+django.core.exceptions.ImproperlyConfigured: You must specify a value for SENDFILE_BACKEND
+[2018-09-25 11:00:59,110] INFO task_2: get task request
+[2018-09-25 11:00:59,114] ERROR task_2: cannot get task
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 152, in get_task
+    response = task.get(tid)
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/task.py", line 169, in get
+    segment_length = max(db_segments[0].stop_frame - db_segments[0].start_frame + 1, 1)
+IndexError: list index out of range
+[2018-09-25 11:36:37,806] INFO task_2: get task request
+[2018-09-25 11:36:37,817] ERROR task_2: cannot get task
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 152, in get_task
+    response = task.get(tid)
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/task.py", line 169, in get
+    segment_length = max(db_segments[0].stop_frame - db_segments[0].start_frame + 1, 1)
+IndexError: list index out of range
+[2018-09-26 07:14:59,633] INFO task_2: get task request
+[2018-09-26 07:14:59,682] ERROR task_2: cannot get task
+Traceback (most recent call last):
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/views.py", line 152, in get_task
+    response = task.get(tid)
+  File "/home/dynamo/AiTouch/cvat/cvat/engine/task.py", line 169, in get
+    segment_length = max(db_segments[0].stop_frame - db_segments[0].start_frame + 1, 1)
+IndexError: list index out of range
+[2018-09-26 07:15:07,038] INFO task_2: dump annotation request
+[2018-09-26 07:15:10,085] INFO task_2: check annotation
+[2018-09-26 07:15:13,050] INFO task_2: check annotation
+[2018-09-26 07:15:16,050] INFO task_2: check annotation
+[2018-09-26 07:15:19,050] INFO task_2: check annotation
+[2018-09-26 07:15:22,050] INFO task_2: check annotation
+[2018-09-26 07:15:25,049] INFO task_2: check annotation
+[2018-09-26 07:15:28,048] INFO task_2: check annotation
+[2018-09-26 07:15:31,050] INFO task_2: check annotation
+[2018-09-26 07:15:34,050] INFO task_2: check annotation
+[2018-09-26 07:15:37,051] INFO task_2: check annotation
