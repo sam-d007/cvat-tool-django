@@ -41,6 +41,7 @@ def create_task(request):
     db_task = None
     params = request.POST.dict()
     params['owner'] = request.user
+    print("User is :", request.user)
     global_logger.info("create task with params = {}".format(params))
     try:
         db_task = task.create_empty(params)
@@ -94,8 +95,10 @@ def create_task(request):
 
 def check_task(request, tid):
     """Check the status of a task"""
-
+    print("***********************************************************")
     try:
+        print("****************** inside *****************************************")
+
         global_logger.info("check task #{}".format(tid))
         response = task.check(tid)
     except Exception as e:

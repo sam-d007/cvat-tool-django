@@ -21,12 +21,15 @@
             <a class="dashboardBugTrackerLink" href='{{item.bug_tracker_link}}' style="display: none;"> </a>
         {% endif %}
     </div>
+    <h6>{{item}}</h6>
+
     <div class="dashboardJobsUI">
         <center class="dashboardTitleWrapper">
             <label class="regular h1"> Jobs </label>
         </center>
         <table class="dashboardJobList regular">
             {% for segment in item.segments %}
+            <h6>{{item}}</h6>
                 <tr>
                     <td> <a href="{{segment.url}}"> {{segment.url}} </a> </td>
                 </tr>

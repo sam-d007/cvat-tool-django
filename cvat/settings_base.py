@@ -117,7 +117,7 @@ RQ_QUEUES = {
 }
 
 RQ_SHOW_ADMIN_LINK = True
-RQ_EXCEPTION_HANDLERS = ['cvat.apps.engine.views.rq_handler']
+RQ_EXCEPTION_HANDLERS = ['engine.views.rq_handler']
 
 
 # JavaScript and CSS compression
@@ -152,7 +152,7 @@ AUTH_PASSWORD_VALIDATORS = [
 CACHEOPS_REDIS = {
     'host': 'localhost', # redis-server is on same machine
     'port': 6379,        # default redis port
-    'db': 1,             # SELECT non-default redis database
+    'db': 0,             # SELECT non-default redis database
 }
 
 CACHEOPS = {

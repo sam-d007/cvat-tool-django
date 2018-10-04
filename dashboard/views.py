@@ -11,6 +11,7 @@ import os
 
 # Create your views here.
 
+
 def ScanNode(directory):
     if '..' in directory.split(os.path.sep):
         return HttpResponseBadRequest('Permission Denied')
@@ -19,21 +20,25 @@ def ScanNode(directory):
     result = []
 
     nodes = os.listdir(act_dir)
-    files = filter(os.path.isfile, map(lambda f: os.path.join(act_dir, f), nodes))
-    dirs = filter(os.path.isdir, map(lambda d: os.path.join(act_dir, d), nodes))
+    files = filter(os.path.isfile, map(
+        lambda f: os.path.join(act_dir, f), nodes))
+    dirs = filter(os.path.isdir, map(
+        lambda d: os.path.join(act_dir, d), nodes))
 
     for d in dirs:
         name = os.path.basename(d)
         children = len(os.listdir(d)) > 0
-        node = {'id': directory + name + '/', 'text': name, 'children': children}
+        node = {'id': directory + name + '/',
+                'text': name, 'children': children}
         result.append(node)
 
     for f in files:
         name = os.path.basename(f)
-        node = {'id': directory + name, 'text': name, "icon" : "jstree-file"}
+        node = {'id': directory + name, 'text': name, "icon": "jstree-file"}
         result.append(node)
 
     return result
+
 
 def MainTaskInfo(task, dst_dict):
     dst_dict["status"] = task.status
@@ -49,14 +54,27 @@ def MainTaskInfo(task, dst_dict):
     dst_dict["id"] = task.id
     dst_dict["segments"] = []
 
+
 def DetailTaskInfo(request, task, dst_dict):
     scheme = request.scheme
     host = request.get_host()
     dst_dict['segments'] = []
-
+    print("dashoard views 61- scheme", scheme)
+    print("dashoard views 62- host", host)
+    print(task.segment_set.all())
+    # print("dashoard views 63- job", job.id)
     for segment in task.segment_set.all():
         for job in segment.job_set.all():
+            # print("***********************************************************")
+            # print("Job", job)
+            # print("dashoard views 61- scheme", scheme)
+            # print("dashoard views 62- host", host)
+            # print("dashoard views 63- job", job.id)
+
             segment_url = "{0}://{1}/?id={2}".format(scheme, host, job.id)
+            print(segment_url)
+            print("***********************************************************")
+
             dst_dict["segments"].append({
                 'id': job.id,
                 'start': segment.start_frame,
@@ -73,6 +91,7 @@ def DetailTaskInfo(request, task, dst_dict):
 
     dst_dict['labels'] = attributes
 
+
 def JsTreeView(request):
     node_id = None
     if 'id' in request.GET:
@@ -80,19 +99,23 @@ def JsTreeView(request):
 
     if node_id is None or node_id == '#':
         node_id = '/'
-        response = [{"id": node_id, "text": node_id, "children": ScanNode(node_id)}]
+        response = [{"id": node_id, "text": node_id,
+                     "children": ScanNode(node_id)}]
     else:
         response = ScanNode(node_id)
 
     return JsonResponse(response, safe=False,
-        json_dumps_params=dict(ensure_ascii=False))
+                        json_dumps_params=dict(ensure_ascii=False))
 
 
 def DashboardView(request):
     filter_name = request.GET['search'] if 'search' in request.GET else None
-    tasks_query_set = list(TaskModel.objects.prefetch_related('segment_set').order_by('-created_date').all())
+    tasks_query_set = list(TaskModel.objects.prefetch_related(
+        'segment_set').order_by('-created_date').all())
+    print("dashboard views 115- task_query_set", tasks_query_set)    
     if filter_name is not None:
-        tasks_query_set = list(filter(lambda x: filter_name.lower() in x.name.lower(), tasks_query_set))
+        tasks_query_set = list(
+            filter(lambda x: filter_name.lower() in x.name.lower(), tasks_query_set))
 
     data = []
     for task in tasks_query_set:

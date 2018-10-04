@@ -69,6 +69,7 @@ def create(tid, params):
     q.enqueue_call(func=_create_thread, args=(tid, params),
         job_id="task.create/{}".format(tid))
 
+
 def check(tid):
     """Check status of the scheduled task"""
     response = {}
@@ -150,8 +151,9 @@ def update(tid, labels):
 def get_frame_path(tid, frame):
     """Read corresponding frame for the task"""
     db_task = models.Task.objects.get(pk=tid)
+    print("in task.py line 153", db_task)
     path = _get_frame_path(frame, db_task.get_data_dirname())
-
+    print("task.py line 155", path)
     return path
 
 def get(tid):
@@ -240,6 +242,7 @@ def is_task_owner(user, tid):
 @transaction.atomic
 def rq_handler(job, exc_type, exc_value, traceback):
     tid = job.id.split('/')[1]
+    print("In task.py line 243", tid)
     db_task = models.Task.objects.select_for_update().get(pk=tid)
     with open(db_task.get_log_path(), "wt") as log_file:
         print_exception(exc_type, exc_value, traceback, file=log_file)
@@ -617,8 +620,9 @@ def _create_thread(tid, params):
 
     global_logger.info("create task #{}".format(tid))
     job = rq.get_current_job()
-
+    print("task.py 623 job", job)
     db_task = models.Task.objects.select_for_update().get(pk=tid)
+    print("task.py 625 db_task", db_task)
     upload_dir = db_task.get_upload_dirname()
     output_dir = db_task.get_data_dirname()
 

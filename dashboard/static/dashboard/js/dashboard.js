@@ -424,7 +424,7 @@ function createTaskRequest(oData, onSuccessRequest, onSuccessCreate, onError, on
 
     function requestCreatingStatus(data) {
         let tid = data.tid;
-        let request_frequency_ms = 1000;
+        let request_frequency_ms = 3000;
         let done = false;
 
         let requestInterval = setInterval(function() {
